@@ -11,7 +11,8 @@ Steps to repro:
 
 🗂 2. Now use pgAdmin to create a new database. Keep in mind the credentials, you will need them to set up the connection link. Don't mind the database structure now, you will have a command to migrate it from Prisma.
 
-🔧 3. It's time to build the app. Using your terminal open the folder named 'app'. I split the app in two parts, 'client' and 'server'.
+🔧 It's time to build the app. 
+   3. Using your terminal open the folder named 'app'. I split the app in two parts, 'client' and 'server'.
    4. Open the 'server' folder with your favorite code editor and you will find a '.env.model' file. Duplicate it and delete '.model'. 
    5. Edit DATABASE_URL="postgresql://ACCOUNT:PASSWORD@localhost:PORT/DB_NAME" . You have to replace ACCOUNT, PASSWORD, PORT, DB_NAME. You have this datas from the first step.
    
