@@ -15,19 +15,19 @@ Steps to repro:
    4. Open the 'server' folder with your favorite code editor and you will find a '.env.model' file. Duplicate it and delete '.model'. 
      Edit DATABASE_URL="postgresql://ACCOUNT:PASSWORD@localhost:PORT/DB_NAME" . You have to replace ACCOUNT, PASSWORD, PORT, DB_NAME. You have this datas from the first step.
      
-⚙️ Let's start with the server:
-   5. Now you have to run this commands into your terminal. Make sure that you are in the 'server' folder:
-   6. npm install (This will install all the dependencies.)
-   7. npm run build (This will build the app so you can run it in the next steps.)
-   8. npm run migrate (This will build database tables and the relations between them. For this step I used Prisma.)
-   9. npm run seed (This will populate the database from predefined .csv files that you can find in '/server/data' folder.)
-🚀 10. npm start (This will start the backend server. This will run on http://localhost:8000/ )
+⚙️  5. Let's start with the server:
+   6. Now you have to run this commands into your terminal. Make sure that you are in the 'server' folder:
+   7. npm install (This will install all the dependencies.)
+   8. npm run build (This will build the app so you can run it in the next steps.)
+   9. npm run migrate (This will build database tables and the relations between them. For this step I used Prisma.)
+   10. npm run seed (This will populate the database from predefined .csv files that you can find in '/server/data' folder.)
+🚀 11. npm start (This will start the backend server. This will run on http://localhost:8000/ )
 
-💻 Let's build the client:
-   11. Using your terminal go to '/app/client' folder
-   12. npm install
-   13. npm run build (Make sure that if you will change the server port from :8000 that I used by default for server, change it also into client. You find the link in 'nuxt.config.ts' file. This is the port where your Client will send request to Server.
-🚀 14. npm start (This will start the client app. That will run on http://localhost:3000/ )
+💻 12. Let's build the client:
+   13. Using your terminal go to '/app/client' folder
+   14. npm install
+   15. npm run build (Make sure that if you will change the server port from :8000 that I used by default for server, change it also into client. You find the link in 'nuxt.config.ts' file. This is the port where your Client will send request to Server.
+🚀 16. npm start (This will start the client app. That will run on http://localhost:3000/ )
 
  
   THE END
