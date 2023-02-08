@@ -16,6 +16,7 @@ Steps to repro:
    5. Edit DATABASE_URL="postgresql://ACCOUNT:PASSWORD@localhost:PORT/DB_NAME" . You have to replace ACCOUNT, PASSWORD, PORT, DB_NAME. You have this datas from the first step.
    
  ⚙️ 6. Let's start with the server
+ 
    7. Now you have to run this commands into your terminal. Make sure that you are in the 'server' folder:
    8. npm install (This will install all the dependencies.)
    9. npm run build (This will build the app so you can run it in the next steps.)
@@ -24,6 +25,7 @@ Steps to repro:
 🚀 12. npm start (This will start the backend server. This will run on http://localhost:8000/ )
 
 💻 13. Let's build the client:
+
    14. Using your terminal go to '/app/client' folder
    15. npm install
    16. npm run build (Make sure that if you will change the server port from :8000 that I used by default for server, change it also into client. You find the link in 'nuxt.config.ts' file. This is the port where your Client will send request to Server.
