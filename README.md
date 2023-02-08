@@ -24,7 +24,8 @@ Steps to repro:
   8. npm run build (This will build the app so you can run it in the next steps.)
   9. npm run migrate (This will build database tables and the relations between them. For this step I used Prisma.)
   10. npm run seed (This will populate the database from predefined .csv files that you can find in '/server/data' folder.)
-🚀 11. npm start (This will start the backend server. This will run on http://localhost:8000/ )
+ 🚀 11. npm start (This will start the backend server. This will run on http://localhost:8000/ )
+ 
  
 
 💻 Let's build the client:
