@@ -9,7 +9,7 @@ Steps to repro:
 
 🗄 1. To use this app first you will need to run a PostgreSQL database. I attached also a folder named 'database' that contains a docker-compose.yml with images for postgres:13 and pg-admin but running on Docker with low memory you may have problems with seeding.
 
-🗂 2. Now use pgAdmin to create a new database. Keep in mind the credentials, you will need them to set up the connection link. Don't mind the database structure now, you will have a command to migrate it from Prism
+🗂 2. Now use pgAdmin to create a new database. Keep in mind the credentials, you will need them to set up the connection link. Don't mind the database structure now, you will have a command to migrate it from Prisma
 
 🔧 It's time to build the app:
 
@@ -19,7 +19,7 @@ Steps to repro:
    
 ⚙️ Let's start with the server
  
-  6. Now you have to run this commands into your terminal. Make sure that you are in the 'server' folder:
+  6. Now you have to run this commands into your terminal. Make sure that you are in the '/app/server' folder:
   7. npm install (This will install all the dependencies.)
   8. npm run build (This will build the app so you can run it in the next steps.)
   9. npm run migrate (This will build database tables and the relations between them. For this step I used Prisma.)
