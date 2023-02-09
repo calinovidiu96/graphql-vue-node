@@ -1,0 +1,33 @@
+type Query {
+	transaction(id: ID!): Transaction
+	transactions(limit: Int, offset: Int): [Transaction!]
+	categories: [Category]
+}
+
+type Mutation {
+	updateTransaction(id: ID!, categoryId: ID!): Transaction
+	createCategory(name: String!, color: String): Category
+}
+
+type Transaction {
+	id: ID!
+	reference: String
+	category: Category
+	account: Account
+	date: String
+	amount: Float
+	currency: String
+}
+
+type Category {
+	id: ID!
+	name: String!
+	color: String
+}
+
+type Account {
+	id: ID!
+	name: String!
+	bank: String!
+	transactions: Transaction
+}
